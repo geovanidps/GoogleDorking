@@ -113,9 +113,10 @@ Este documento contém uma lista abrangente de **Google Dorks**, que são consul
 | `inurl:"redirect" OR inurl:"url="` | Redirecionamentos abertos e XSS divulgados |
 | `site:github.com intext:"api_key" OR intext:"password"` | Vazamentos de código no GitHub |
 | `ext:bak OR ext:old OR ext:backup` | Arquivos com extensões suculentas |
+| `site:exemplo.com ext:txt ext:pdf` | Arquivos com documentos |
 
-Documentos !!
-site:exemplo.com ext:txt ext:pdf
+
+
 
 ---
 📌 **Nota:** Essas técnicas são para fins **educacionais e de segurança**. Use apenas com permissão. Não nós responsabilizamos por quaiquer danos🔥
