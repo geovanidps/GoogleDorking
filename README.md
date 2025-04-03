@@ -101,5 +101,18 @@ Este documento contém uma lista abrangente de **Google Dorks**, que são consul
 | `site:pastebin.com intext:"password"` | Busca credenciais vazadas no Pastebin |
 | `site:github.com intext:"access_token"` | Tokens de acesso vazados no GitHub |
 
+## 🔍 Lista Única Adicional
+| **Dork** | **Descrição** |
+|---------|-------------|
+| `intext:"Internal Server Error" OR intext:"SQL syntax error"` | Erros do servidor expostos |
+| `inurl:login OR intext:"admin login"` | Páginas de login expostas |
+| `inurl:"?id=" OR inurl:"?cat=" OR inurl:"?product="` | Parâmetros propensos a SQLi |
+| `inurl:"upload" OR intext:"file upload"` | Pontos finais de upload de arquivo |
+| `filetype:pdf OR filetype:doc OR filetype:xlsx` | Documentos sensíveis expostos |
+| `inurl:"config" OR inurl:"settings" OR inurl:"credentials"` | Parâmetros sensíveis |
+| `inurl:"redirect" OR inurl:"url="` | Redirecionamentos abertos e XSS divulgados |
+| `site:github.com intext:"api_key" OR intext:"password"` | Vazamentos de código no GitHub |
+| `ext:bak OR ext:old OR ext:backup` | Arquivos com extensões suculentas |
+
 ---
 📌 **Nota:** Essas técnicas são para fins **educacionais e de segurança**. Use apenas com permissão. Não nós responsabilizamos por quaiquer danos🔥
