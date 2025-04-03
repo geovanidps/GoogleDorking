@@ -114,5 +114,8 @@ Este documento contém uma lista abrangente de **Google Dorks**, que são consul
 | `site:github.com intext:"api_key" OR intext:"password"` | Vazamentos de código no GitHub |
 | `ext:bak OR ext:old OR ext:backup` | Arquivos com extensões suculentas |
 
+## Documentos !!
+site:exemplo.com ext:txt | ext:pdf | ext:xml | ext:xls | ext:xlsx | ext:ppt | ext:pptx | ext:doc | ext:docx
+intext:“confidential” | intext:“reserved” | intext:“security” | intext:“secreto” intext:“Not for Public Release” | intext:”internal use only” | intext:“do not distribute”
 ---
 📌 **Nota:** Essas técnicas são para fins **educacionais e de segurança**. Use apenas com permissão. Não nós responsabilizamos por quaiquer danos🔥
