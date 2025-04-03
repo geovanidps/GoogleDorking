@@ -6,6 +6,28 @@ Este documento contém uma lista abrangente de **Google Dorks**, que são consul
 
 ⚠️ **Atenção:** O uso inadequado dessas informações pode violar diretrizes legais e éticas. Utilize este material apenas para fins educacionais e de segurança. 🚀
 
+## 🔥 Exploração de XSS, CSRF, LFI e Outras Vulnerabilidades
+| **Dork** | **Descrição** |
+|---------|-------------|
+| `inurl:"search.php?q="` | Parâmetros vulneráveis a XSS |
+| `inurl:".php?id="` | Possível parâmetro vulnerável a SQL Injection |
+| `inurl:"/view.php?page="` | Possível vulnerabilidade de LFI (Local File Inclusion) |
+| `inurl:"redirect.php?url="` | Parâmetro de redirecionamento suscetível a Open Redirect |
+| `inurl:"/upload/" filetype:php` | Uploads de arquivos potencialmente exploráveis |
+| `intitle:"Cross Site Request Forgery" inurl:"csrf"` | Páginas discutindo vulnerabilidades CSRF |
+| `inurl:"/include/" intitle:"index of"` | Diretórios de includes expostos |
+| `inurl:"config.json" intext:"secret"` | Arquivos de configuração com segredos expostos |
+
+## 🔑 Credenciais Expostas
+| **Dork** | **Descrição** |
+|---------|-------------|
+| `inurl:wp-config.php` | Configuração do WordPress com credenciais |
+| `intitle:"Index of" "id_rsa"` | Chaves privadas SSH expostas |
+| `filetype:ini intext:password` | Arquivos INI com senhas |
+| `filetype:xml intext:AWSAccessKeyId` | Chaves da AWS expostas |
+| `filetype:json intext:"client_secret"` | Segredos de OAuth vazados |
+| `filetype:txt intext:"username" intext:"password"` | Arquivos de texto com credenciais |
+
 ## 📌 Informações Sensíveis
 | **Dork** | **Descrição** |
 |---------|-------------|
@@ -17,16 +39,6 @@ Este documento contém uma lista abrangente de **Google Dorks**, que são consul
 | `filetype:json intext:API_KEY` | Chaves de API expostas em arquivos JSON |
 | `filetype:config intext:secret` | Configurações que podem conter segredos |
 | `filetype:xml intext:autodiscover` | Arquivos XML de Autodiscover do Exchange |
-
-## 🔑 Credenciais Expostas
-| **Dork** | **Descrição** |
-|---------|-------------|
-| `inurl:wp-config.php` | Configuração do WordPress com credenciais |
-| `intitle:"Index of" "id_rsa"` | Chaves privadas SSH expostas |
-| `filetype:ini intext:password` | Arquivos INI com senhas |
-| `filetype:xml intext:AWSAccessKeyId` | Chaves da AWS expostas |
-| `filetype:json intext:"client_secret"` | Segredos de OAuth vazados |
-| `filetype:txt intext:"username" intext:"password"` | Arquivos de texto com credenciais |
 
 ## 🌎 Servidores Web e Protocolos Expostos
 | **Dork** | **Descrição** |
