@@ -16,6 +16,7 @@ Este documento contém uma lista abrangente de **Google Dorks**, que são consul
 | `ext:env intext:DB_PASSWORD` | Arquivos `.env` contendo credenciais |
 | `filetype:json intext:API_KEY` | Chaves de API expostas em arquivos JSON |
 | `filetype:config intext:secret` | Configurações que podem conter segredos |
+| `filetype:xml intext:autodiscover` | Arquivos XML de Autodiscover do Exchange |
 
 ## 🔑 Credenciais Expostas
 | **Dork** | **Descrição** |
@@ -27,7 +28,7 @@ Este documento contém uma lista abrangente de **Google Dorks**, que são consul
 | `filetype:json intext:"client_secret"` | Segredos de OAuth vazados |
 | `filetype:txt intext:"username" intext:"password"` | Arquivos de texto com credenciais |
 
-## 🌎 Servidores Web Expostos
+## 🌎 Servidores Web e Protocolos Expostos
 | **Dork** | **Descrição** |
 |---------|-------------|
 | `inurl:/phpinfo.php` | Arquivos `phpinfo.php` expostos |
@@ -36,6 +37,9 @@ Este documento contém uma lista abrangente de **Google Dorks**, que são consul
 | `inurl:/wp-admin` | Login do WordPress |
 | `inurl:/jenkins intext:"Dashboard"` | Jenkins CI/CD sem autenticação |
 | `intitle:"Grafana" inurl:/login` | Painéis do Grafana desprotegidos |
+| `filetype:conf intext:"NTLM"` | Configuração de NTLM potencialmente vulnerável |
+| `intitle:"index of" "ntlm"` | Diretórios contendo arquivos relacionados ao NTLM |
+| `filetype:config intext:"AuthenticationMethods"` | Métodos de autenticação configurados expostos |
 
 ## 🔥 Arquivos e Diretórios Sensíveis
 | **Dork** | **Descrição** |
@@ -86,4 +90,4 @@ Este documento contém uma lista abrangente de **Google Dorks**, que são consul
 | `site:github.com intext:"access_token"` | Tokens de acesso vazados no GitHub |
 
 ---
-📌 **Nota:** Essas técnicas são para fins **educacionais e de segurança**. Use apenas com permissão. Não nós responsabilizamos por quaisquer danos  🔥
+📌 **Nota:** Essas técnicas são para fins **educacionais e de segurança**. Use apenas com permissão. Não nós responsabilizamos por quaiquer danos🔥
