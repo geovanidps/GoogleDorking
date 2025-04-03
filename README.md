@@ -1,4 +1,5 @@
-![Uploading Gemini_Generated_Image_9zrfoc9zrfoc9zrf.jpeg…]()
+![Gemini_Generated_Image_9zrfoc9zrfoc9zrf](https://github.com/user-attachments/assets/ac37373d-f059-4398-916c-bb431f39ffe3)
+
 
 
 # 🕵️‍♂️ Google Dorking Cheat Sheet
